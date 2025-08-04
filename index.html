@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PixelLens Photography</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+ }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-flex">
+      <a href="#" class="logo">
+        <img src="logo1.jpg" alt="PixelLens Photography Logo">
+      </a>
+      <nav id="navbar">
+        <a href="#">Home</a>
+        <a href="#">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">&#9776;</button>
+    </div>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <br> <br>
+      <h1>Capture Your Moments</h1>
+
+      <a href="#" class="cta-btn">View Portfolio</a>
+    </div>
+  </section>
+  <br><br>
+
+  <!-- About Section -->
+ <section id="about">
+   <div class="container about-content">
+     <h2>About Us</h2>
+       <p>
+        At PixelLens Photography, we are passionate about capturing the beauty and emotion of life's most important moments.
+         <br>With years of experience in the field, our team is dedicated to providing high-quality, creative, and professional photography services for every occasion.
+       </p>
+   </div>
+ </section>
+
+<br><br>
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-flex">
+      <p>&copy; 2025 PixelLens Photography</p>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Twitter">🐦</a>
+        <a href="#" aria-label="Facebook">📘</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    // Mobile Nav Toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const navbar = document.getElementById('navbar');
+    navToggle.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
+
+
